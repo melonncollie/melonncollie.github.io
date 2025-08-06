@@ -1,0 +1,94 @@
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Replace with your desired font */
+    background-color: #f7f5e8; /* Light yellow background color from reference */
+    color: #2c2f33; /* Dark text color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+/* You'll need to add styles for the social icon links here */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+    gap: 50px;
+}
+
+.hero-content {
+    flex-basis: 50%;
+}
+
+.greeting {
+    font-size: 1.2em;
+}
+
+.main-heading {
+    font-size: 4em;
+    font-weight: 700;
+    color: #2c2f33;
+    line-height: 1.1;
+    margin: 10px 0;
+}
+
+.location {
+    font-size: 1.2em;
+}
+
+.resume-button {
+    display: inline-block;
+    background-color: #fce268; /* Yellow button color */
+    color: #2c2f33;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.hero-image-container {
+    flex-basis: 40%;
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+    border-radius: 50%; /* For a circular image */
+    object-fit: cover;
+    border: 5px solid #2c2f33; /* The dark border around the image */
+}
