@@ -5,9 +5,17 @@
     box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #2c2f33; /* For headings and primary text */
+  --secondary-color: #fce268; /* For the accent button */
+  --background-color: #f7f5e8; /* The light yellow background */
+  --text-color: #2c2f33; /* Main body text color */
+  --border-color: #2c2f33; /* For the image border */
+}
+
 body {
     font-family: sans-serif; /* Replace with your desired font */
-    background-color: #f7f5e8; /* Light yellow background color from reference */
+    background-color: var(--background-color); /* Light yellow background color from reference */
     color: #2c2f33; /* Dark text color */
 }
 
@@ -70,8 +78,8 @@ body {
 
 .resume-button {
     display: inline-block;
-    background-color: #fce268; /* Yellow button color */
-    color: #2c2f33;
+    background-color: var(--secondary-color); /* Yellow button color */
+    color: var(--primary-color);
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
@@ -90,5 +98,5 @@ body {
     height: 300px;
     border-radius: 50%; /* For a circular image */
     object-fit: cover;
-    border: 5px solid #2c2f33; /* The dark border around the image */
+    border: 5px solid var(--primary-color); /* The dark border around the image */
 }
